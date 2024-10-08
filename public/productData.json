@@ -1,17 +1,17 @@
 [
     {
-        "id": 2,
-        "productName": "Velour Shorts Sweat Set",
-        "description": "Ultra-soft raglan sweatshirt and drawstring shorts set. Made with organic cotton.",
-        "price": 88,
-        "imageSrc": "https://static.wearpact.com/img/product/women/w4o-mnv-1-1727371092_thumb.jpg"
-    },
-    {
         "id": 1,
         "productName": "Daily Wear Legging",
         "description": "Super-soft go-to legging. Made with organic cotton.",
         "price": 44,
         "imageSrc": "https://static.wearpact.com/img/product/women/wfz-cch-2-1705072291_thumb.jpg"
+    },
+    {
+        "id": 2,
+        "productName": "Velour Shorts Sweat Set",
+        "description": "Ultra-soft raglan sweatshirt and drawstring shorts set. Made with organic cotton.",
+        "price": 88,
+        "imageSrc": "https://static.wearpact.com/img/product/women/w4o-mnv-1-1727371092_thumb.jpg"
     },
     {
         "id": 3,
