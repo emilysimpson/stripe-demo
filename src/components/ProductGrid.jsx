@@ -1,9 +1,7 @@
-'use-client'
 import React from 'react';
 import ProductCard from './ProductCard';
 
-export default async function ProductGrid() {
-    const productsData = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/get-products`, { method: 'GET' }).then((res) => res.json());
+export default async function ProductGrid({productsData}) {
 
     return (
         <div className='grid grid-cols-3 gap-10'>

@@ -1,10 +1,16 @@
-'use client'
 import ProductGrid from '../components/ProductGrid';
 
-export default function Home() {
+async function getServerSideProps() {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/get-products`, { method: 'GET' });
+  const productsData = await res.json()
+  return productsData;
+}
+
+export default async function Home() {
+  const products = await getServerSideProps();
   return (
     <div>
-      <ProductGrid/>
+      <ProductGrid productsData={products}/>
     </div>
   );
 }
