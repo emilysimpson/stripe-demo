@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "cacheDirectories": [".next/cache"],
   "dependencies": {
     "@stripe/react-stripe-js": "^2.8.1",
     "@stripe/stripe-js": "^4.7.0",
