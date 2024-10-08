@@ -1,6 +1,6 @@
 'use client'
 
-import PaymentStatus from '../components/PaymentStatus';
+import PaymentStatus from '../../components/PaymentStatus';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
 

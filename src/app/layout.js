@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from './components/Navbar';
-import { ShopProvider } from './components/Cart';
+import Navbar from '../components/Navbar';
+import { ShopProvider } from '../components/Cart';
 
 const averta = localFont({
   src: [

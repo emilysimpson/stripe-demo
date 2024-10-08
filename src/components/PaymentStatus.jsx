@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState, useContext } from 'react';
 import { useStripe } from '@stripe/react-stripe-js';
-import { CartContext } from '../components/Cart';
+import { CartContext } from './Cart';
 import Spinner from './Spinner';
 import Link from 'next/link';
 

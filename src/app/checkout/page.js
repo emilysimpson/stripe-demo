@@ -2,8 +2,8 @@
 import { useContext } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
-import { CartContext } from '@/app/components/Cart';
-import CheckoutForm from '@/app/components/CheckoutForm';
+import { CartContext } from '../../components/Cart';
+import CheckoutForm from '../../components/CheckoutForm';
 import Link from 'next/link';
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_PUBLISHABLE_KEY);
