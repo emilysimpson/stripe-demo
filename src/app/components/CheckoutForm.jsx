@@ -1,3 +1,4 @@
+'use client'
 import { useState, useContext } from 'react';
 import { useStripe, useElements, PaymentElement } from '@stripe/react-stripe-js';
 import { CartContext } from './Cart';
@@ -17,7 +18,7 @@ export default function CheckoutForm() {
         const {error} = await stripe.confirmPayment({
             elements,
             confirmParams: {
-              return_url: 'http://localhost:3000/order-confirmation',
+              return_url: `${process.env.NEXT_PUBLIC_URL}/order-confirmation`,
             },
         });
         
