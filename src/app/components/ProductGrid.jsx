@@ -7,7 +7,7 @@ export default async function ProductGrid() {
     return (
         <div className='grid grid-cols-3 gap-10'>
             {productsData.map((product) => (
-                <ProductCard product={product}/>
+                <ProductCard product={product} key={product.id}/>
             ))}
         </div>
     )

@@ -32,7 +32,7 @@ export default function CheckoutForm() {
             <div className='flex flex-col w-7/12'>
                 <p className='text-xl mb-6'>Order Summary</p>
                 {cartItems.map((item) => 
-                    <CartProduct product={item} summary={false}/>
+                    <CartProduct product={item} summary={false} key={item.id}/>
                 )}
                 <div className='flex justify-between border-t mt-2 pt-4 px-8'>
                     <p>Order Total</p>

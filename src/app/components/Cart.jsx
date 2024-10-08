@@ -77,7 +77,7 @@ export const Cart = () => {
                 <div className='border-b border-gray-300 my-4'>
                     { cartQty > 0 ?
                         cartItems.map((item) => 
-                            <CartProduct product={item}/>
+                            <CartProduct product={item} key={item.id}/>
                         )
                         :
                         <p className='mb-2 italic'>Your bag is currently empty.</p>
