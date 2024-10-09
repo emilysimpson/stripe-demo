@@ -9,7 +9,7 @@ export default function CartProduct({ product, summary = true }) {
 
     return (
         <div className='flex flex-wrap my-4 relative'>
-            <Image src={product.imageSrc} width={200} height={300} className='w-4/12'/>
+            <Image src={product.imageSrc} width={200} height={300} className='object-cover w-4/12'/>
             <div className='flex flex-col grow px-8 py-4 w-8/12'>
                 <div className='pb-2'>{product.productName}</div>
                 <p className='text-sm pb-6 font-light'>{product.description}</p>

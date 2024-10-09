@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       <body className={`${averta.variable} font-sans`}>
         <ShopProvider>
           <Navbar/>
-          <main className="max-w-screen-xl mx-auto pt-20">
+          <main className="max-w-screen-xl mx-auto py-20 px-4">
             {children}
           </main>
         </ShopProvider>

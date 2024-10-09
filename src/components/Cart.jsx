@@ -72,8 +72,8 @@ export const Cart = () => {
     const { cartItems, cartQty } = useContext(CartContext);
 
     return (
-        <div className='flex flex-wrap gap-4 justify-between max-w-screen-lg mx-auto'>
-            <div className='w-7/12'>
+        <div className='flex flex-col md:flex-wrap md:flex-row gap-4 justify-between max-w-screen-lg mx-auto'>
+            <div className='w-full md:w-7/12'>
                 <div className='border-b border-gray-300 my-4'>
                     { cartQty > 0 ?
                         cartItems.map((item) => 
@@ -83,9 +83,9 @@ export const Cart = () => {
                         <p className='mb-2 italic'>Your bag is currently empty.</p>
                     }
                 </div>
-                <Link href='/' className='hover:bg-gray-100 text-gray-800 border rounded border-gray-500 py-2 px-4 transition ease-in-out'>Continue Shopping</Link>
+                <Link href='/' className='hover:bg-gray-100 text-center block md:inline text-gray-800 border rounded border-gray-500 py-2 px-4 transition ease-in-out'>Continue Shopping</Link>
             </div>
-            <div className='w-4/12 border border-gray-300 rounded p-4 h-96'>
+            <div className='w-full md:w-4/12 border border-gray-300 rounded p-4 mt-8 md:mt-0 h-auto md:h-96'>
                 <CartSummary/>
             </div>
         </div>

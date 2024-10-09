@@ -28,8 +28,8 @@ export default function CheckoutForm() {
     }
 
     return (
-        <div className='flex flex-wrap gap-4 justify-between max-w-screen-lg mx-auto'>
-            <div className='flex flex-col w-7/12'>
+        <div className='flex flex-col md:flex-wrap md:flex-row gap-4 justify-between max-w-screen-lg mx-auto'>
+            <div className='flex flex-col w-full md:w-7/12'>
                 <p className='text-xl mb-6'>Order Summary</p>
                 {cartItems.map((item) => 
                     <CartProduct product={item} summary={false} key={item.id}/>
@@ -39,7 +39,7 @@ export default function CheckoutForm() {
                     <p>${cartTotal}</p>
                 </div>
             </div>
-            <form onSubmit={handleSubmit} className='w-4/12'>
+            <form onSubmit={handleSubmit} className='w-full md:w-4/12 p-4 mt-8 md:mt-0 border md:border-0 border-gray-300 rounded'>
                 <label className='text-xl block pb-8'>Payment</label>
                 <PaymentElement />
                 <button disabled={!stripe} className='w-full hover:bg-gray-500 disabled:bg-slate-200 text-white rounded bg-gray-600 py-2 px-4 mt-4 transition ease-in-out text-center'>Submit</button>
